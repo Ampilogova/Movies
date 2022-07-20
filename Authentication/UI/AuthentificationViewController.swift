@@ -54,6 +54,7 @@ class AuthentificationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         loginButton.addTarget(self, action: #selector(loginUser), for: .touchUpInside)
         setupUI()
         requestToken()
@@ -93,7 +94,6 @@ class AuthentificationViewController: UIViewController {
             case .success(let token):
                 DispatchQueue.main.async {
                     self?.token = token.request_token
-//                    self?.approveToken()
                 }
             case .failure(let error):
                 print(error)
@@ -125,6 +125,7 @@ class AuthentificationViewController: UIViewController {
             switch result {
             case .success(let sessionId):
                 DispatchQueue.main.async {
+                    UserDefaults.standard.set("1", forKey: "isLogin")
                     self?.sessionId = sessionId.session_id
                     self?.openUserInfo()
                 }
@@ -143,7 +144,7 @@ class AuthentificationViewController: UIViewController {
     
     func openUserInfo() {
         let vc = UserInfoViewController(sessionId: sessionId)
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

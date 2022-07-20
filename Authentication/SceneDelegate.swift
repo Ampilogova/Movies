@@ -20,9 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let authentificationService = AuthentificationTokenServiceImpl(networkService: networkService)
         let validateUserService = ValidateUserServiceImpl(networkService: networkService)
         let sessionService = SessionServiceImpl(networkService: networkService)
+        let home = MoviesViewController()
         
-        let navigationController = UINavigationController(rootViewController: AuthentificationViewController(authentificationService: authentificationService, validateUserService: validateUserService, sessionService: sessionService))
-        window.rootViewController = navigationController
+        if UserDefaults.standard.value(forKey: "isLogin") != nil  {
+            window.rootViewController = home
+        } else {
+            let navigationController = UINavigationController(rootViewController: AuthentificationViewController(authentificationService: authentificationService, validateUserService: validateUserService, sessionService: sessionService))
+            window.rootViewController = navigationController
+        }
         window.makeKeyAndVisible()
         window.backgroundColor = .white
         self.window = window

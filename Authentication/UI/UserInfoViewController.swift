@@ -34,7 +34,7 @@ class UserInfoViewController: UIViewController {
         loadUserInfo()
     }
     
-    func loadUserInfo() {
+    private func loadUserInfo() {
         userService.requestSession(sessionId: sessionId) { result in
             switch result {
             case .success(let user):
@@ -46,7 +46,7 @@ class UserInfoViewController: UIViewController {
             }
         }
     }
-    
+
     private func setupUI() {
         userName.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(userName)
@@ -55,5 +55,4 @@ class UserInfoViewController: UIViewController {
             userName.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
     }
-
 }

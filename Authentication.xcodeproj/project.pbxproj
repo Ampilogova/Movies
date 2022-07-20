@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE14242F28877403003B5C5E /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE14242E28877403003B5C5E /* MoviesViewController.swift */; };
 		CE7ABC052859279900F55302 /* ValidateUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7ABC042859279900F55302 /* ValidateUserService.swift */; };
 		CE7ABC07285927C000F55302 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7ABC06285927C000F55302 /* UserAuthentication.swift */; };
 		CE7ABC0A285939C800F55302 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7ABC09285939C800F55302 /* SessionService.swift */; };
@@ -17,7 +18,6 @@
 		CEDA6B38285905B900D33BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6B37285905B900D33BBA /* AppDelegate.swift */; };
 		CEDA6B3A285905B900D33BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6B39285905B900D33BBA /* SceneDelegate.swift */; };
 		CEDA6B3C285905B900D33BBA /* AuthentificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6B3B285905B900D33BBA /* AuthentificationViewController.swift */; };
-		CEDA6B3F285905B900D33BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDA6B3D285905B900D33BBA /* Main.storyboard */; };
 		CEDA6B41285905BF00D33BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDA6B40285905BF00D33BBA /* Assets.xcassets */; };
 		CEDA6B44285905BF00D33BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDA6B42285905BF00D33BBA /* LaunchScreen.storyboard */; };
 		CEDA6B4F285905C000D33BBA /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6B4E285905C000D33BBA /* AuthenticationTests.swift */; };
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE14242E28877403003B5C5E /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		CE7ABC042859279900F55302 /* ValidateUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUserService.swift; sourceTree = "<group>"; };
 		CE7ABC06285927C000F55302 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		CE7ABC09285939C800F55302 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		CEDA6B37285905B900D33BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDA6B39285905B900D33BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEDA6B3B285905B900D33BBA /* AuthentificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationViewController.swift; sourceTree = "<group>"; };
-		CEDA6B3E285905B900D33BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDA6B40285905BF00D33BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDA6B43285905BF00D33BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDA6B45285905BF00D33BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,7 +152,6 @@
 				CEDA6B39285905B900D33BBA /* SceneDelegate.swift */,
 				CEDA6B682859081800D33BBA /* Core */,
 				CEDA6B67285907FC00D33BBA /* UI */,
-				CEDA6B3D285905B900D33BBA /* Main.storyboard */,
 				CEDA6B40285905BF00D33BBA /* Assets.xcassets */,
 				CEDA6B42285905BF00D33BBA /* LaunchScreen.storyboard */,
 				CEDA6B45285905BF00D33BBA /* Info.plist */,
@@ -182,6 +181,7 @@
 			children = (
 				CEDA6B3B285905B900D33BBA /* AuthentificationViewController.swift */,
 				CE7ABC122859484200F55302 /* UserInfoViewController.swift */,
+				CE14242E28877403003B5C5E /* MoviesViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -322,7 +322,6 @@
 			files = (
 				CEDA6B44285905BF00D33BBA /* LaunchScreen.storyboard in Resources */,
 				CEDA6B41285905BF00D33BBA /* Assets.xcassets in Resources */,
-				CEDA6B3F285905B900D33BBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +357,7 @@
 				CE7ABC0A285939C800F55302 /* SessionService.swift in Sources */,
 				CE7ABC0C285939FC00F55302 /* Session.swift in Sources */,
 				CE7ABC0F2859463200F55302 /* UserService.swift in Sources */,
+				CE14242F28877403003B5C5E /* MoviesViewController.swift in Sources */,
 				CE7ABC07285927C000F55302 /* UserAuthentication.swift in Sources */,
 				CE7ABC052859279900F55302 /* ValidateUserService.swift in Sources */,
 				CEDA6B3A285905B900D33BBA /* SceneDelegate.swift in Sources */,
@@ -397,14 +397,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEDA6B3D285905B900D33BBA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEDA6B3E285905B900D33BBA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEDA6B42285905BF00D33BBA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -542,7 +534,6 @@
 				INFOPLIST_FILE = Authentication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -570,7 +561,6 @@
 				INFOPLIST_FILE = Authentication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
